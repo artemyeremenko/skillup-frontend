@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -140px;
+  visibility: hidden;
+}
+
+.anchor > span {
+  position: absolute;
+}
+
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #f7f7f7;
+background-image: url(../pages/img/double.png), url(../pages/img/bg-image.jpg);
+background-repeat: no-repeat;
+background-position: 99% 25%, center;
+background-size: 100px, cover;
+}
+
+.bg-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  background-image: url(../pages/img/tex.jpg);
+  background-size: 200px, 200px;
+  background-position: 98% 16%, center;
+  background-repeat: repeat;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.main {
+  margin-top: 220px;
+  margin-bottom: 200px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px;
+}
+
+.inner {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #D0E5F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  padding: 20px;
+  background-color: #5FB1FE;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+.navbar-link:hover,
+.navbar-link:active {
+  color: white;
+  background-color: #EFA5C2;
+  transform: scale(1.2) translateY(10px);
+}
+
+.footer {
+  background-color: #D8F4F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #56A2F5;
+}
+
+.copy {
+  font-weight: 300;
+  text-align: center;
+}
+
+.article-name {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: dotted orange;
+  color: black;
+}
+
+.article-text {
+  background-color: #eeeeee;
+  padding: 5px;
+}
+
+.read-more:hover {
+color: #f70556;
+}
+
+.comments-link {
+  color: #cf233d;
+}
+
+.p-letter::first-letter  {
+  font-family: "Tahoma";
+  font-size: 35px;
+  color: #DC143C;
+}
+
+.sublist {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 37px;
+  list-style-image: url(../pages/img/icons8-u---образная-стрелка-вправо-15.png);
+  background-color: #fff;
+  width: 250px;
+}
+
+.list-catalog {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+  background-color: #E2F2F1;
+}
+
+.books {
+  list-style-image: url(../pages/img/открытая-книга-20.png);
+}
+
+.office {
+  list-style-image: url(../pages/img/icons8-стакан-с-карандашами-20.png);
+}
+
+.accessories {
+  list-style-image: url(../pages/img/icons8-fitbit-20.png);
+}
+
+.new::after {
+  content: "new";
+  background: #32ed35;
+  color: aliceblue;
+  font-size: 70%;
+  padding: 2px;
+  margin-left: 3px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5em;
+  margin: 20px 20px;
+  background-color: #E2F2F1;
+  text-align: center;
+}
+
+.border-img {
+  border: 5px solid #118DA0;
+}
+
+.border-img:hover {
+  border-color: transparent;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: #D0E5F2;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.form-group-sm:hover {
+  outline: 2px dotted white;
+}
+
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+input[type="file"] {
+  padding: 0;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.capitali {
+  text-transform: capitalize;
+}
+
+.center-text {
+  text-align: center;
+}
+
+@media (min-width: 425px) {
+  .main {
+    margin-top: 260px;
+  }
+}
